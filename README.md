@@ -1,16 +1,19 @@
 # aula_1
 
-A new Flutter project.
+# Widgets 
 
-## Getting Started
+Form, TextFormField, Scaffold, Row , Column
 
-This project is a starting point for a Flutter application.
+# Atributos 
 
-A few resources to get you started if this is your first Flutter project:
+TextFormField(
+    keyboardType: Define que teclado será aberto, após apertar o campo
+    maxLength: limita a quantidade de caracteris no campo,
+    controller: permite que peguemos o valor do campo
+    validator: é passado como parametro uma função que valida o campo
+    )
+)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+keyForm = GlobalKey<FormState>();
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Utilizada para acessar o contexto e percorrer os campos do Form 
