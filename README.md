@@ -17,3 +17,7 @@ TextFormField(
 keyForm = GlobalKey<FormState>();
 
 Utilizada para acessar o contexto e percorrer os campos do Form 
+
+# pub get
+
+Os plugins são nada mais são que bibliotecas que disponibilizam codigos que possuem finalidades
