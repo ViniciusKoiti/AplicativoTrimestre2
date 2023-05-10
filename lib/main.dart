@@ -1,4 +1,5 @@
 import 'package:aula_1/formulario.dart';
+import 'package:aula_1/formularioCEP/formularioCEP.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Formulario()
+      home: FormularioCep()
     );
   }
 }
