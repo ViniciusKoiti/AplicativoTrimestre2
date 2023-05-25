@@ -1,5 +1,7 @@
+import 'package:persistencia/database/sqlite/conexao.dart';
 import 'package:persistencia/view/dto/contato.dart';
 import 'package:persistencia/view/interface/contato_interface_dao.dart';
+import 'package:sqflite/sqflite.dart';
 
 class ContatoDAOSQLite implements ContatoInterfaceDAO{
    @override

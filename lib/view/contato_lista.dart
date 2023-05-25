@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:persistencia/database/daofake/contato_dao_fake.dart';
+import 'package:persistencia/database/sqlite/dao/contato_dao_sqlite.dart';
 import 'package:persistencia/rota.dart';
 import 'package:persistencia/view/dto/contato.dart';
 import 'package:persistencia/view/interface/contato_interface_dao.dart';
@@ -16,7 +17,7 @@ class ContatoLista extends StatefulWidget {
 }
 
 class _ContatoListaState extends State<ContatoLista> {
-  ContatoInterfaceDAO dao = ContatoDAOFake();
+  ContatoInterfaceDAO dao = ContatoDAOSQLite();
 
   @override
   Widget build(BuildContext context) {
