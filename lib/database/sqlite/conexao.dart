@@ -3,7 +3,9 @@ import 'package:persistencia/database/sqlite/script_bd.dart';
 import 'package:sqflite/sqflite.dart';
 
 class Conexao {
+  // Variaveis para utilização da database
   static late Database _database;
+  // Variaveis de controle
   static bool _fechado = true;
 
    static Future<Database> criar() async {
@@ -11,6 +13,8 @@ class Conexao {
       String path = join(await getDatabasesPath(),
           'banco.db'); //definindo o camminho do database
       //deleteDatabase(path);                                    //caso queira apagar tudo antes, descomente esta linha
+      
+      
       _database = await openDatabase(
         //chamando o método que que abre o database
         path, // informando o caminho
